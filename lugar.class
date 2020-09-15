@@ -1,0 +1,104 @@
+
+public class lugar {
+	
+	//	Atributos
+	private String nome;
+	private String pais;
+	private String cidade;
+	private String idioma;
+	private String clima;
+	
+	//Contrutor
+	public lugar (String nome, String pais, String cidade, String idioma, String clima) {
+		
+		this.nome = nome;
+		this.pais = pais;
+		this.cidade = cidade;
+		this.idioma = idioma;
+		this.escolarpais = escolarpais;
+		
+	}
+    
+    
+    //Metodos Getters e Setters
+	private String getNome() {
+        
+        return nome;
+    
+    }
+
+	private void setNome(String nome) {
+    
+        this.nome = nome;
+    
+    }
+
+	private String getpais() {
+    
+        return pais;
+    
+    }
+
+	private void setpais(String pais) {
+    
+        this.pais = pais;
+    
+    }
+
+	private String getcidade() {
+    
+        return cidade;
+    
+    }
+
+	private void setcidade(String cidade) {
+    
+        this.cidade = cidade;
+    
+    }
+
+	private String getidioma() {
+    
+        return idioma;
+    
+    }
+
+	private void setidioma(String idioma) {
+    
+        this.idioma = idioma;
+    
+    }
+
+	private String getescolarpais() {
+    
+        return escolarpais;
+    
+    }
+
+	private void setescolarpais(String escolarpais) {
+    
+        this.escolarpais = escolarpais;
+    
+    }
+
+    
+    //Metodos de Classe
+	public static void viajar() {
+		
+		System.out.println("Uma pessoa viajou para "+getNome+"!");
+		
+	}
+    
+    public static void hospedar() {
+		
+		System.out.println("Uma pessoa se hospedou no "+getNome+"!");
+		
+    }
+    
+    public static void atender() {
+		
+		System.out.println("Uma pessoa foi atendida no "+getNome+"!");
+		
+    }
+    
+}

@@ -1,0 +1,104 @@
+
+public class instrumento {
+	
+	//	Atributos
+	private String nome;
+	private String marca;
+	private float valor;
+	private String tipo;
+	private String familia;
+	
+	//Contrutor
+	public instrumento (String nome, String marca, float valor, String tipo, String familia) {
+		
+		this.nome = nome;
+		this.marca = marca;
+		this.valor = valor;
+		this.tipo = tipo;
+		this.familia = familia;
+		
+	}
+    
+    
+    //Metodos Getters e Setters
+	private String getNome() {
+        
+        return nome;
+    
+    }
+
+	private void setNome(String nome) {
+    
+        this.nome = nome;
+    
+    }
+
+	private String getmarca() {
+    
+        return marca;
+    
+    }
+
+	private void setmarca(String marca) {
+    
+        this.marca = marca;
+    
+    }
+
+	private String getvalor() {
+    
+        return valor;
+    
+    }
+
+	private void setvalor(float valor) {
+    
+        this.valor = valor;
+    
+    }
+
+	private String gettipo() {
+    
+        return tipo;
+    
+    }
+
+	private void settipo(String tipo) {
+    
+        this.tipo = tipo;
+    
+    }
+
+	private String getfamilia() {
+    
+        return familia;
+    
+    }
+
+	private void setfamilia(String familia) {
+    
+        this.familia = familia;
+    
+    }
+
+    
+    //Metodos de Classe
+	public static void tocar() {
+		
+		System.out.println("Uma pessoa tocou o Instrumento!");
+		
+	}
+    
+    public static void afinar() {
+		
+		System.out.println("Uma pessoa afinou o Instrumento!");
+		
+    }
+    
+    public static void dedilhar() {
+		
+		System.out.println("Uma pessoa dedilhou o Instrumento!");
+		
+    }
+    
+}

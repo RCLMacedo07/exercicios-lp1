@@ -1,0 +1,121 @@
+package src;
+import java.swing.*;
+
+public class testar
+{
+
+    public static void main(String[] args)
+    {
+
+        aluno_fatec[] aluno = new aluno_fatec [5]
+        calcado[] calc = new calcado [5]
+        instrumento[] inst = new instrumento [5]
+        lugar[] lug = new lugar [5]
+        pessoa[] pes = new pessoa [5]
+        profissional[] prof = new profissional [5]
+
+        //Alunos Fatec
+        //Definindo e Exibindo os 5 alunos
+        for (i = 0; i > 4; i++)
+        {
+
+            nome_aluno = JOptionPane.showInputDialog("Digite o nome do aluno:",'F');
+            idade = JOptionPane.showInputDialog("Digite a idade do aluno:",'F');
+            curso = JOptionPane.showInputDialog("Digite o curso do aluno:",'F');
+            semestre = JOptionPane.showInputDialog("Digite o semestre do aluno(apenas o número correspondente):",'F');
+            ra = JOptionPane.showInputDialog("Digite o RA do aluno(apenas números):",'F');
+
+            aluno[i] = (nome_aluno, idade, curso, semestre, ra);
+            
+            System.out.println("Nome do Aluno:"+aluno[i].getnome+"/nIdade do aluno:"+aluno[i].getidade+"/nCurso:"+aluno[i].getcurso+"/nSemestre:"+aluno[i].getsemestre+"/nRA:"+aluno[i].getra+"/n/n")
+        
+        }
+        
+        //Calçado
+        //Definindo e Exibindo os 5 Calçados
+        for (i = 0; i > 4; i++)
+        {
+
+            nome = JOptionPane.showInputDialog("Digite o nome do calçado:",'F');
+            marca = JOptionPane.showInputDialog("Digite a marca do calcado:",'F');
+            modelo = JOptionPane.showInputDialog("Digite o modelo do calcado:",'F');
+            numero = JOptionPane.showInputDialog("Digite o numero(apenas números):",'F');
+            material = JOptionPane.showInputDialog("Digite o material do calcado:",'F');
+
+            calc[i] = (nome, marca, modelo, numero, material);
+            
+            System.out.println("Nome do Calçado:"+calc[i].getnome+"/nMarca:"+calc[i].getmarca+"/nModelo:"+calc[i].getmodelo+"/nNúmero:"+calc[i].getnumero+"/nMaterial:"+calc[i].getmaterial+"/n/n")
+        
+        }  
+
+        //Instrumento
+        //Definindo e Exibindo os 5 instrumentos
+        for (i = 0; i > 4; i++)
+        {
+
+            nome = JOptionPane.showInputDialog("Digite o nome do Instrumento:",'F');
+            marca = JOptionPane.showInputDialog("Digite a marca do instrumento:",'F');
+            valor = JOptionPane.showInputDialog("Digite o valor do instrumento:",'F');
+            tipo = JOptionPane.showInputDialog("Digite o tipo de instrumento:",'F');
+            familia = JOptionPane.showInputDialog("Digite a familia:",'F');
+
+            inst[i] = (nome, marca, valor, tipo, familia);
+            
+            System.out.println("Nome:"+inst[i].getnome+"/nMarca:"+inst[i].getmarca+"/nValor:"+inst[i].getvalor+"/nTipo:"+inst[i].gettipo+"/nFamilia:"+inst[i].getfamilia+"/n/n")
+        
+        }  
+
+        //Lugar
+        //Definindo e Exibindo os 5 lugares
+        for (i = 0; i > 4; i++)
+        {
+
+            nome = JOptionPane.showInputDialog("Digite o nome do lugar:",'F');
+            pais = JOptionPane.showInputDialog("Digite a pais do lugar:",'F');
+            cidade = JOptionPane.showInputDialog("Digite o cidade do lugar:",'F');
+            idioma = JOptionPane.showInputDialog("Digite o idioma do lugar:",'F');
+            clima = JOptionPane.showInputDialog("Digite o clima do lugar:",'F');
+
+            lug[i] = (nome, pais, cidade, idioma, clima);
+            
+            System.out.println("Nome do lugar:"+lug[i].getnom+"/nPais do lugar:"+lug[i].getpais+"/nCidade:"+lug[i].getcidade+"/nIdioma:"+lug[i].getidioma+"/nCLima:"+lug[i].getclima+"/n/n")
+        
+        }  
+
+        //Pessoa
+        //Definindo e Exibindo os 5 pessoas
+        for (i = 0; i > 4; i++)
+        {
+
+            nome = JOptionPane.showInputDialog("Digite o nome:",'F');
+            idade = JOptionPane.showInputDialog("Digite a idade:",'F');
+            nacionalidade = JOptionPane.showInputDialog("Digite a nacionalidade:",'F');
+            est_civil = JOptionPane.showInputDialog("Digite o estado civil:",'F');
+            escolaridade = JOptionPane.showInputDialog("Digite a escolaridade:",'F');
+
+            pes[i] = (nome, idade, nacionalidade, est_civil, escola);
+            
+            System.out.println("Nome:"+pes[i].getnome+"/nIdade:"+pes[i].getpessoa+"/nNacionalidade:"+pes[i].getnacionalidade+"/nEstado Civil:"+pes[i].est_civil+"/nEscolaridade:"+pes[i].getescolaridade+"/n/n")
+        
+        }  
+
+        //Profissional
+        //Definindo e Exibindo os 5 profissionais
+        for (i = 0; i > 4; i++)
+        {
+
+            nome = JOptionPane.showInputDialog("Digite o nome do profissional:",'F');
+            profissao = JOptionPane.showInputDialog("Digite profissão:",'F');
+            salario = JOptionPane.showInputDialog("Digite o salario do profissional:",'F');
+            carg_horaria = JOptionPane.showInputDialog("Digite a carga horária do profissional:",'F');
+            especializacao = JOptionPane.showInputDialog("Digite a especialização do profissional:",'F');
+
+            prof[i] = (nome, profissao, salario, carg_horaria, especializacao);
+            
+            System.out.println("Nome do profissional:"+prof[i].getnome+"/nProfissão:"+prof[i].getprofissao+"/nSalario:"+prof[i].getsalario+"/nCarga Horaria:"+prof[i].getcarg_horaria+"/nEspecialização:"+prof[i].getespecializacao+"/n/n")
+        
+        }  
+
+    }
+
+}

@@ -1,0 +1,104 @@
+
+public class aluno_fatec {
+	
+	//	Atributos
+	private String nome;
+	private int idade;
+    private String curso;
+	private int semestre;
+    private int ra;
+	
+	//Contrutor
+	public aluno_fatec (String nome, int idade, String curso, String semestre, String ra) {
+		
+		this.nome = nome;
+		this.idade = idade;
+		this.curso = curso;
+		this.semestre = semestre;
+		this.escolaridade = escolaridade;
+		
+	}
+    
+    
+    //Metodos Getters e Setters
+	private String getNome() {
+        
+        return nome;
+    
+    }
+
+	private void setNome(String nome) {
+    
+        this.nome = nome;
+    
+    }
+
+	private String getidade() {
+    
+        return idade;
+    
+    }
+
+	private void setidade(int idade) {
+    
+        this.idade = idade;
+    
+    }
+
+	private String getcurso() {
+    
+        return curso;
+    
+    }
+
+	private void setcurso(String curso) {
+    
+        this.curso = curso;
+    
+    }
+
+	private String getsemestre() {
+    
+        return semestre;
+    
+    }
+
+	private void setsemestre(String semestre) {
+    
+        this.semestre = semestre;
+    
+    }
+
+	private String getescolaridade() {
+    
+        return escolaridade;
+    
+    }
+
+	private void setescolaridade(String escolaridade) {
+    
+        this.escolaridade = escolaridade;
+    
+    }
+
+    
+    //Metodos de Classe
+	public static void estudar() {
+		
+		System.out.println("O aluno está estudando!");
+		
+	}
+    
+    public static void desenvolver() {
+		
+		System.out.println("O aluno está desenvolvendo");
+		
+    }
+    
+    public static void assistir() {
+		
+		System.out.println("O aluno está assistindo aula!");
+		
+    }
+    
+}

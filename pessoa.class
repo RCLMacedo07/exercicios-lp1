@@ -1,0 +1,104 @@
+
+public class pessoa {
+	
+	//	Atributos
+	private String nome;
+	private int idade;
+	private String nacionalidade;
+	private String est_civil;
+	private String escolaridade;
+	
+	//Contrutor
+	public pessoa (String nome, int idade, String nacionalidade, String est_civil, String escolaridade) {
+		
+		this.nome = nome;
+		this.idade = idade;
+		this.nacionalidade = nacionalidade;
+		this.est_civil = est_civil;
+		this.escolaridade = escolaridade;
+		
+	}
+    
+    
+    //Metodos Getters e Setters
+	private String getNome() {
+        
+        return nome;
+    
+    }
+
+	private void setNome(String nome) {
+    
+        this.nome = nome;
+    
+    }
+
+	private String getidade() {
+    
+        return idade;
+    
+    }
+
+	private void setidade(int idade) {
+    
+        this.idade = idade;
+    
+    }
+
+	private String getnacionalidade() {
+    
+        return nacionalidade;
+    
+    }
+
+	private void setnacionalidade(String nacionalidade) {
+    
+        this.nacionalidade = nacionalidade;
+    
+    }
+
+	private String getest_civil() {
+    
+        return est_civil;
+    
+    }
+
+	private void setest_civil(String est_civil) {
+    
+        this.est_civil = est_civil;
+    
+    }
+
+	private String getescolaridade() {
+    
+        return escolaridade;
+    
+    }
+
+	private void setescolaridade(String escolaridade) {
+    
+        this.escolaridade = escolaridade;
+    
+    }
+
+    
+    //Metodos de Classe
+	public static void andar() {
+		
+		System.out.println("A pessoa andou!");
+		
+	}
+    
+    public static void falar() {
+		
+		System.out.println("A pessoa falou!");
+		
+    }
+    
+    public static void correr() {
+		
+		System.out.println("A pessoa correu!");
+		
+    }
+    
+}

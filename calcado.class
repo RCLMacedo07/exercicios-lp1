@@ -1,0 +1,104 @@
+
+public class calcado {
+	
+	//	Atributos
+	private String nome;
+	private String marca;
+	private String modelo;
+	private int numero;
+	private String material;
+	
+	//Contrutor
+	public calcado (String nome, int marca, String modelo, String numero, String material) {
+		
+		this.nome = nome;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.numero = numero;
+		this.material = material;
+		
+	}
+    
+    
+    //Metodos Getters e Setters
+	private String getNome() {
+        
+        return nome;
+    
+    }
+
+	private void setNome(String nome) {
+    
+        this.nome = nome;
+    
+    }
+
+	private String getmarca() {
+    
+        return marca;
+    
+    }
+
+	private void setmarca(String marca) {
+    
+        this.marca = marca;
+    
+    }
+
+	private String getmodelo() {
+    
+        return modelo;
+    
+    }
+
+	private void setmodelo(String modelo) {
+    
+        this.modelo = modelo;
+    
+    }
+
+	private String getnumero() {
+    
+        return numero;
+    
+    }
+
+	private void setnumero(int numero) {
+    
+        this.numero = numero;
+    
+    }
+
+	private String getmaterial() {
+    
+        return material;
+    
+    }
+
+	private void setmaterial(String material) {
+    
+        this.material = material;
+    
+    }
+
+    
+    //Metodos de Classe
+	public static void calcar() {
+		
+		System.out.println("Uma pessoa calçou o calçado!");
+		
+	}
+    
+    public static void amarrar() {
+		
+		System.out.println("Uma pessoa amarrou o calçado!");
+		
+    }
+    
+    public static void tirar() {
+		
+		System.out.println("Uma pessoa tirou o calcado!");
+		
+    }
+    
+}
