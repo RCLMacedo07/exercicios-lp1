@@ -1,14 +1,16 @@
+package recursos;
+
 
 public class instrumento {
 	
-	//	Atributos
+	/*Atributos*/
 	private String nome;
 	private String marca;
 	private float valor;
 	private String tipo;
 	private String familia;
 	
-	//Contrutor
+	/*Contrutor*/
 	public instrumento (String nome, String marca, float valor, String tipo, String familia) {
 		
 		this.nome = nome;
@@ -20,69 +22,69 @@ public class instrumento {
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getmarca() {
+	public String getmarca() {
     
         return marca;
     
     }
 
-	private void setmarca(String marca) {
+	public void setmarca(String marca) {
     
         this.marca = marca;
     
     }
 
-	private String getvalor() {
+	public float getvalor() {
     
         return valor;
     
     }
 
-	private void setvalor(float valor) {
+	public void setvalor(float valor) {
     
         this.valor = valor;
     
     }
 
-	private String gettipo() {
+	public String gettipo() {
     
         return tipo;
     
     }
 
-	private void settipo(String tipo) {
+	public void settipo(String tipo) {
     
         this.tipo = tipo;
     
     }
 
-	private String getfamilia() {
+	public String getfamilia() {
     
         return familia;
     
     }
 
-	private void setfamilia(String familia) {
+	public void setfamilia(String familia) {
     
         this.familia = familia;
     
     }
 
     
-    //Metodos de Classe
+    /*Metodos de Classe*/
 	public static void tocar() {
 		
 		System.out.println("Uma pessoa tocou o Instrumento!");

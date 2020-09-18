@@ -1,14 +1,16 @@
+package recursos;
+
 
 public class profissional {
 	
-	//	Atributos
+	/*Atributos*/
 	private String nome;
-	private int profissao;
+	private String profissao;
 	private float salario;
-	private String carg_horaria;
+	private int carg_horaria;
 	private String especializacao;
 	
-	//Contrutor
+	/*Contrutor*/
 	public profissional (String nome, String profissao, float salario, int carg_horaria, String especializacao) {
 		
 		this.nome = nome;
@@ -20,69 +22,69 @@ public class profissional {
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getprofissao() {
+	public String getprofissao() {
     
         return profissao;
     
     }
 
-	private void setprofissao(int profissao) {
+	public void setprofissao(String profissao) {
     
         this.profissao = profissao;
     
     }
 
-	private String getsalario() {
+	public float getsalario() {
     
         return salario;
     
     }
 
-	private void setsalario(String salario) {
+	public void setsalario(float salario) {
     
         this.salario = salario;
     
     }
 
-	private String getcarg_horaria() {
+	public int getcarg_horaria() {
     
         return carg_horaria;
     
     }
 
-	private void setcarg_horaria(String carg_horaria) {
+	public void setcarg_horaria(int carg_horaria) {
     
         this.carg_horaria = carg_horaria;
     
     }
 
-	private String getespecializacao() {
+	public String getespecializacao() {
     
         return especializacao;
     
     }
 
-	private void setespecializacao(String especializacao) {
+	public void setespecializacao(String especializacao) {
     
         this.especializacao = especializacao;
     
     }
 
     
-    //Metodos de Classe
+    /*Metodos de Classe*/
 	public static void atender() {
 		
 		System.out.println("O profissional atendeu um cliente!");
@@ -102,3 +104,4 @@ public class profissional {
     }
     
 }
+

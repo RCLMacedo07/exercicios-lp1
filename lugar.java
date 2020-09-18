@@ -1,104 +1,107 @@
+package recursos;
+
 
 public class lugar {
 	
-	//	Atributos
+	/*Atributos*/
 	private String nome;
 	private String pais;
 	private String cidade;
 	private String idioma;
 	private String clima;
 	
-	//Contrutor
+	/*Contrutor*/
 	public lugar (String nome, String pais, String cidade, String idioma, String clima) {
 		
 		this.nome = nome;
 		this.pais = pais;
 		this.cidade = cidade;
 		this.idioma = idioma;
-		this.escolarpais = escolarpais;
+		this.clima = clima;
 		
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getpais() {
+	public String getpais() {
     
         return pais;
     
     }
 
-	private void setpais(String pais) {
+	public void setpais(String pais) {
     
         this.pais = pais;
     
     }
 
-	private String getcidade() {
+	public String getcidade() {
     
         return cidade;
     
     }
 
-	private void setcidade(String cidade) {
+	public void setcidade(String cidade) {
     
         this.cidade = cidade;
     
     }
 
-	private String getidioma() {
+	public String getidioma() {
     
         return idioma;
     
     }
 
-	private void setidioma(String idioma) {
+	public void setidioma(String idioma) {
     
         this.idioma = idioma;
     
     }
 
-	private String getescolarpais() {
+	public String getclima() {
     
-        return escolarpais;
-    
-    }
-
-	private void setescolarpais(String escolarpais) {
-    
-        this.escolarpais = escolarpais;
+        return clima;
     
     }
 
+	public void clima(String clima) {
     
-    //Metodos de Classe
+        this.clima = clima;
+    
+    }
+
+    
+    /*Metodos de Classe*/
 	public static void viajar() {
 		
-		System.out.println("Uma pessoa viajou para "+getNome+"!");
+		System.out.println("Uma pessoa viajou para o lugar!");
 		
 	}
     
     public static void hospedar() {
 		
-		System.out.println("Uma pessoa se hospedou no "+getNome+"!");
+		System.out.println("Uma pessoa se hospedou no lugar!");
 		
     }
     
     public static void atender() {
 		
-		System.out.println("Uma pessoa foi atendida no "+getNome+"!");
+		System.out.println("Uma pessoa foi atendida no lugar!");
 		
     }
     
 }
+

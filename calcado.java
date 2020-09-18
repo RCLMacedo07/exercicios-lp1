@@ -1,15 +1,17 @@
+package recursos;
+
 
 public class calcado {
 	
-	//	Atributos
+	/*Atributos*/
 	private String nome;
 	private String marca;
 	private String modelo;
 	private int numero;
 	private String material;
 	
-	//Contrutor
-	public calcado (String nome, int marca, String modelo, String numero, String material) {
+	/*Contrutor*/
+	public calcado (String nome, String marca, String modelo, int numero, String material) {
 		
 		this.nome = nome;
 		this.marca = marca;
@@ -20,69 +22,69 @@ public class calcado {
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getmarca() {
+	public String getmarca() {
     
         return marca;
     
     }
 
-	private void setmarca(String marca) {
+	public void setmarca(String marca) {
     
         this.marca = marca;
     
     }
 
-	private String getmodelo() {
+	public String getmodelo() {
     
         return modelo;
     
     }
 
-	private void setmodelo(String modelo) {
+	public void setmodelo(String modelo) {
     
         this.modelo = modelo;
     
     }
 
-	private String getnumero() {
+	public int getnumero() {
     
         return numero;
     
     }
 
-	private void setnumero(int numero) {
+	public void setnumero(int numero) {
     
         this.numero = numero;
     
     }
 
-	private String getmaterial() {
+	public String getmaterial() {
     
         return material;
     
     }
 
-	private void setmaterial(String material) {
+	public void setmaterial(String material) {
     
         this.material = material;
     
     }
 
     
-    //Metodos de Classe
+    /*Metodos de Classe*/
 	public static void calcar() {
 		
 		System.out.println("Uma pessoa calçou o calçado!");

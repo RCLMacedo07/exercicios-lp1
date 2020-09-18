@@ -1,3 +1,5 @@
+package recursos;
+
 
 public class aluno_fatec {
 	
@@ -8,81 +10,81 @@ public class aluno_fatec {
 	private int semestre;
     private int ra;
 	
-	//Contrutor
-	public aluno_fatec (String nome, int idade, String curso, String semestre, String ra) {
+	/*Contrutor*/
+	public aluno_fatec (String nome, int idade, String curso, int semestre, int ra) {
 		
 		this.nome = nome;
 		this.idade = idade;
 		this.curso = curso;
 		this.semestre = semestre;
-		this.escolaridade = escolaridade;
+		this.ra = ra;
 		
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getidade() {
+	public int getidade() {
     
         return idade;
     
     }
 
-	private void setidade(int idade) {
+	public void setidade(int idade) {
     
         this.idade = idade;
     
     }
 
-	private String getcurso() {
+	public String getcurso() {
     
         return curso;
     
     }
 
-	private void setcurso(String curso) {
+	public void setcurso(String curso) {
     
         this.curso = curso;
     
     }
 
-	private String getsemestre() {
+	public int getsemestre() {
     
         return semestre;
     
     }
 
-	private void setsemestre(String semestre) {
+	public void setsemestre(int semestre) {
     
         this.semestre = semestre;
     
     }
 
-	private String getescolaridade() {
+	public int getra() {
     
-        return escolaridade;
-    
-    }
-
-	private void setescolaridade(String escolaridade) {
-    
-        this.escolaridade = escolaridade;
+        return ra;
     
     }
 
+	public void setra(int ra) {
     
-    //Metodos de Classe
+        this.ra = ra;
+    
+    }
+
+    
+    /*Metodos de Classe*/
 	public static void estudar() {
 		
 		System.out.println("O aluno está estudando!");
@@ -102,3 +104,4 @@ public class aluno_fatec {
     }
     
 }
+

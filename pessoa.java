@@ -1,3 +1,5 @@
+package recursos;
+
 
 public class pessoa {
 	
@@ -20,69 +22,69 @@ public class pessoa {
 	}
     
     
-    //Metodos Getters e Setters
-	private String getNome() {
+    /*Metodos Getters e Setters*/
+	public String getNome() {
         
         return nome;
     
     }
 
-	private void setNome(String nome) {
+	public void setNome(String nome) {
     
         this.nome = nome;
     
     }
 
-	private String getidade() {
+	public int getidade() {
     
         return idade;
     
     }
 
-	private void setidade(int idade) {
+	public void setidade(int idade) {
     
         this.idade = idade;
     
     }
 
-	private String getnacionalidade() {
+	public String getnacionalidade() {
     
         return nacionalidade;
     
     }
 
-	private void setnacionalidade(String nacionalidade) {
+	public void setnacionalidade(String nacionalidade) {
     
         this.nacionalidade = nacionalidade;
     
     }
 
-	private String getest_civil() {
+	public String getest_civil() {
     
         return est_civil;
     
     }
 
-	private void setest_civil(String est_civil) {
+	public void setest_civil(String est_civil) {
     
         this.est_civil = est_civil;
     
     }
 
-	private String getescolaridade() {
+	public String getescolaridade() {
     
         return escolaridade;
     
     }
 
-	private void setescolaridade(String escolaridade) {
+	public void setescolaridade(String escolaridade) {
     
         this.escolaridade = escolaridade;
     
     }
 
     
-    //Metodos de Classe
+    /*Metodos de Classe*/
 	public static void andar() {
 		
 		System.out.println("A pessoa andou!");
@@ -102,3 +104,4 @@ public class pessoa {
     }
     
 }
+
